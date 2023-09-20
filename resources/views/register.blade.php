@@ -9,9 +9,9 @@
         <div class="overlap">
           <div class="background">
             <div class="overlap-group">
-              <img class="background-layer" src="img/background-layer2.png" />
-              <img class="registerpage-button" src="img/registerpage-button.png" />
-              <img class="loginpage-button" src="img/loginpage-button.png" />
+              <img class="background-layer1" src="{{ asset('img/background_layer.png') }}" />
+              <img class="registerpage-button" src="{{ asset('img/registerpage_button.png')}}" />
+              <img class="loginpage-button" src="{{ asset('img/loginpage_button.png')}}" />
             </div>
           </div>
           <div class="input-user">

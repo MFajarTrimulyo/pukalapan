@@ -1,4 +1,5 @@
-
+@extends('layout')
+@section
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +10,6 @@
     <link rel="stylesheet" href="css/output.css">
 </head>
 <body>
-    <h1 class="text-3xl font-mono">
-        Hello world!
-    </h1>
+    
 </body>
 </html>

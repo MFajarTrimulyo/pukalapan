@@ -37,12 +37,13 @@
     width: 1595px;
   }
   
-  .REGISTER-PAGE .background-layer {
-    height: 881px;
+  .REGISTER-PAGE .background-layer1 {
+    height: 882px;
+    color: ;
     left: 0;
     position: absolute;
     top: 0;
-    width: 615px;
+    width: 1596px;
   }
   
   .REGISTER-PAGE .registerpage-button {
