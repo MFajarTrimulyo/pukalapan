@@ -6,7 +6,18 @@ export default {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        brown: "#874B29",
+        lightbrown: "#d99a77",
+        semibrown: "#a16747",
+        bgbtn: "#6477DB",
+      },
+      fontFamily: {
+        lilita: ['Lilita One'],
+        bebas: ['Bebas Neue'],
+      }
+    },
   },
   plugins: [],
 }
