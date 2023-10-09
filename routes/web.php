@@ -25,6 +25,12 @@ Route::get('/register', function (){
     return view('register');
 });
 
+<<<<<<< Updated upstream
 Route::get('/admin', function (){
     return view('admin.index');
 });
+=======
+Route::get('/forget', function (){
+    return view('forget');
+});
+>>>>>>> Stashed changes

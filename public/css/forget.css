@@ -1,0 +1,267 @@
+.FORGET-PASSWORD {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .FORGET-PASSWORD .overlap-wrapper {
+    background-image: url(./img/FORGET-PASSWORD.svg);
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 1920px;
+    height: 1080px;
+  }
+  
+  .FORGET-PASSWORD .overlap {
+    width: 1597px;
+    top: 99px;
+    left: 175px;
+    position: relative;
+    height: 882px;
+  }
+  
+  .FORGET-PASSWORD .background {
+    position: absolute;
+    width: 1597px;
+    height: 882px;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 6px #00000080;
+  }
+  
+  .FORGET-PASSWORD .overlap-group {
+    width: 1595px;
+    position: relative;
+    height: 882px;
+  }
+  
+  .FORGET-PASSWORD .background-layer {
+    position: absolute;
+    width: 615px;
+    height: 881px;
+    top: 0;
+    left: 0;
+  }
+  
+  .FORGET-PASSWORD .registerpage-button {
+    position: absolute;
+    width: 231px;
+    height: 59px;
+    top: 130px;
+    left: 555px;
+  }
+  
+  .FORGET-PASSWORD .loginpage-button {
+    position: absolute;
+    width: 231px;
+    height: 59px;
+    top: 57px;
+    left: 555px;
+  }
+  
+  .FORGET-PASSWORD .picture {
+    position: absolute;
+    width: 980px;
+    height: 881px;
+    top: 1px;
+    left: 615px;
+    background-image: url(./img/rectangle-1.png);
+    background-size: 100% 100%;
+  }
+  
+  .FORGET-PASSWORD .text-wrapper {
+    position: absolute;
+    height: 15px;
+    top: 856px;
+    left: 629px;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .FORGET-PASSWORD .input-user {
+    position: absolute;
+    width: 351px;
+    height: 562px;
+    top: 253px;
+    left: 61px;
+    box-shadow: 0px 4px 4px #00000040;
+  }
+  
+  .FORGET-PASSWORD .div {
+    position: absolute;
+    height: 19px;
+    top: 543px;
+    left: 0;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .FORGET-PASSWORD .input-button {
+    position: absolute;
+    width: 171px;
+    height: 47px;
+    top: 358px;
+    left: 0;
+    all: unset;
+    box-sizing: border-box;
+  }
+  
+  .FORGET-PASSWORD .div-wrapper {
+    position: relative;
+    width: 169px;
+    height: 47px;
+    background-color: #ffffff;
+    border-radius: 50px;
+  }
+  
+  .FORGET-PASSWORD .text-wrapper-2 {
+    position: absolute;
+    width: 91px;
+    height: 22px;
+    top: 12px;
+    left: 39px;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #874b29;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .FORGET-PASSWORD .div-2 {
+    position: absolute;
+    width: 349px;
+    height: 68px;
+    top: 192px;
+    left: 0;
+  }
+  
+  .FORGET-PASSWORD .password {
+    position: absolute;
+    width: 162px;
+    height: 22px;
+    top: 0;
+    left: 0;
+  }
+  
+  .FORGET-PASSWORD .confirm-password {
+    position: absolute;
+    height: 22px;
+    top: 0;
+    left: 0;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+  
+  .FORGET-PASSWORD .input {
+    position: absolute;
+    width: 349px;
+    height: 35px;
+    top: 33px;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 25px;
+  }
+  
+  .FORGET-PASSWORD .mdi-password-add {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: 8px;
+    left: 9px;
+  }
+  
+  .FORGET-PASSWORD .newpasswordregister {
+    position: absolute;
+    width: 349px;
+    height: 68px;
+    top: 96px;
+    left: 0;
+  }
+  
+  .FORGET-PASSWORD .password-2 {
+    width: 131px;
+    position: absolute;
+    height: 22px;
+    top: 0;
+    left: 0;
+  }
+  
+  .FORGET-PASSWORD .text-wrapper-3 {
+    position: absolute;
+    height: 22px;
+    top: 0;
+    left: 0;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .FORGET-PASSWORD .passwordregister {
+    position: absolute;
+    width: 349px;
+    height: 68px;
+    top: 0;
+    left: 0;
+  }
+  
+  .FORGET-PASSWORD .password-3 {
+    width: 122px;
+    position: absolute;
+    height: 22px;
+    top: 0;
+    left: 0;
+  }
+  
+  .FORGET-PASSWORD .mdi-password {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 7px;
+    left: 9px;
+  }
+  
+  .FORGET-PASSWORD .REGISTER {
+    position: absolute;
+    width: 456px;
+    height: 126px;
+    top: 77px;
+    left: 61px;
+    text-shadow: 0px 4px 4px #00000040;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 52px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .FORGET-PASSWORD .PUKALAPAN {
+    position: absolute;
+    width: 186px;
+    height: 21px;
+    top: 31px;
+    left: 28px;
+  }  
