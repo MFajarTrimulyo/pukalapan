@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/kategori', function () { return view('page.kategori'); });
+Route::get('/isi', function () {return view('homepage.isi');});
+Route::get('/search', 'SearchController@search')->name('search');
 
 Route::get('/login', function (){
     return view('login');
