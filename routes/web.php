@@ -29,5 +29,9 @@ Route::get('/forget', function (){
     return view('forget');
 });
 
-Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin.index');
-Route::get('/admin/create', [App\Http\Controllers\AdminController::class, 'create'])->name('admin.create');
+Route::get('/admin/user', [App\Http\Controllers\UserController::class, 'index'])->name('admin.user.index');
+Route::get('/admin/user/create', [App\Http\Controllers\UserController::class, 'create'])->name('admin.user.create');
+
+Route::get('/admin/buku', [App\Http\Controllers\BukuController::class, 'index'])->name('admin.buku.index');
+Route::get('/admin/buku/create', [App\Http\Controllers\BukuController::class, 'create'])->name('admin.buku.create');
+
