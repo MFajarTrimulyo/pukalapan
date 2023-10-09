@@ -25,6 +25,5 @@ Route::get('/register', function (){
     return view('register');
 });
 
-Route::get('/admin', function (){
-    return view('admin.index');
-});
+Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin.index');
+Route::get('/admin/create', [App\Http\Controllers\AdminController::class, 'create'])->name('admin.create');
