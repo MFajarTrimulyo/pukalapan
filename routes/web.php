@@ -13,11 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', function () {
-    return view('homepage.index');
+    return view('user.homepage.index');
 });
 
-Route::get('/kategori', function () { return view('page.kategori'); });
-Route::get('/isi', function () {return view('homepage.isi');});
+Route::get('/kategori', function () { return view('user.kategori.home-kategori'); });
+Route::get('/isi', function () {return view('user.homepage.isi');});
 Route::get('/search', 'SearchController@search')->name('search');
 
 Route::get('/login', function (){
