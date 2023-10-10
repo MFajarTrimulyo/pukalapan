@@ -1,5 +1,4 @@
-
-@section('title', 'Login')
+@section('title', 'Forgot Password')
 @include('main')
 <body class="cat__pages__login">
 <!-- START: pages/login -->
@@ -8,65 +7,32 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="cat__pages__login__block__promo text-white text-center">
-                    <h2 class="mb-">
-                        <strong>WELCOME TO EZEELIVE TECHNOLOGIES - ADMIN PANEL</strong>
-                    </h2>
+                    <h1 class="mb-3"></h1>
                 </div>
                 <div class="cat__pages__login__block__inner">
                     <div class="cat__pages__login__block__form">
                         <h4 class="text-uppercase">
-                            <strong>Please log in</strong>
+                            <strong>Forgot Password</strong>
                         </h4>
                         <br />
-						@if(isset(Auth::user()->email))
-							<script>window.location="/main/dashboard"</script>
-						@endif
-						@if($message = Session::get('error'))
-							<div class="alert alert-danger alert-block">
-								<button type="button" class="close" data-dismiss="alert">x</button>
-								<strong>{{ $message }}</strong>
-							</div>	
-						@endif		
-						@if (count($errors)>0)
-							<div class="alert alert-danger">
-								<ul>
-									@foreach($errors->all() as $error)
-										<li>{{ $error }}</li>
-									@endforeach	
-								</ul>
-							</div>
-						@endif	
-                        <form id="form-validation" name="form-validation" method="POST" action="{{ route('login') }}">
-						{{ csrf_field() }}
+                        <form id="form-validation" name="form-validation" method="POST">
                             <div class="form-group">
                                 <label class="form-label">Username</label>
                                 <input id="validation-email"
                                        class="form-control"
                                        placeholder="Email or Username"
-                                       name="email"
+                                       name="validation[username]"
                                        type="text"
                                        data-validation="[NOTEMPTY]">
                             </div>
                             <div class="form-group">
-                                <label class="form-label">Password</label>
-                                <input id="validation-password"
-                                       class="form-control password"
-                                       name="password"
-                                       type="password" data-validation="[L>=6]"
-                                       data-validation-message="$ must be at least 6 characters"
-                                       placeholder="Password">
-                            </div>
-                            <div class="form-group">
-                                <a href="{{ url('/password/lost') }}" class="pull-right cat__core__link--blue cat__core__link--underlined">Forgot Password?</a>
+                                <a href="{{ url('/login') }}" class="pull-right cat__core__link--blue cat__core__link--underlined">Login</a>
                                 <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox"  checked>
-                                        Remember me
-                                    </label>
+                                    <p>&nbsp;</p>
                                 </div>
                             </div>
                             <div class="form-actions">
-                                <button type="submit" class="btn btn-primary mr-3" name="login" value="login">Sign In</button>
+                                <button type="submit" class="btn btn-primary mr-3">Sign In</button>
                             </div>
                         </form>
                     </div>
@@ -113,10 +79,9 @@
             next = Math.floor(Math.random()*max) + min,
             final = next > max ? min : next;
         $('.random-bg-image').data('img', final);
-        $('.cat__pages__login').data('img', final).css('backgroundImage', 'url(dist/modules/pages/common/img/login/' + final + '.jpg)');
+        $('.cat__pages__login').data('img', final).css('backgroundImage', 'url(/dist/modules/pages/common/img/login/' + final + '.jpg)');
     
     });
 </script>
 <!-- END: page scripts -->
 </body>
-
