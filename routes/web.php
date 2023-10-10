@@ -12,6 +12,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/', function () {
+    return view('homepage.index');
+});
 
 Route::get('/kategori', function () { return view('page.kategori'); });
 Route::get('/isi', function () {return view('homepage.isi');});
