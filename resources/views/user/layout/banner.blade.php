@@ -16,8 +16,8 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <h2 class="banner-title">Temukan Impian Mu disini</h2>
-              <p>"Tidak ada teman yang setia seperti halnya buku."</p>
+              <h2 class="banner-title">Temukan Impian Mu</h2>
+              <p style="color: white;">"Tidak ada teman yang setia seperti halnya buku."</p>
               <div class="btn-wrap">
                 <a href="shop.html" class="btn btn-light btn-medium d-flex align-items-center" tabindex="0">Baca Sekarang <i class="icon icon-arrow-io"></i>
                 </a>

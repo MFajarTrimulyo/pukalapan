@@ -1,30 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Pukulapan</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <link rel="stylesheet"  href="{{asset ('css/normalize.css')}}">
-    <link rel="stylesheet"  href="{{asset ('icomoon/icomoon.css')}}">
-    <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{asset ('css/vendor.css')}}">
-    <link rel="stylesheet"  href="{{asset ('css/style.css')}}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- script
-    ================================================== -->
-    <script src="{{asset ('js/jquery-1.11.0.min.js')}}"></script>
-    <script src="{{asset ('js/plugins.js')}}"></script>
-    <script src="{{asset ('js/script.js')}}"></script>
-    <script src="{{asset ('js/modernizr.js')}}"></script>
-  </head>
 <body>
   
   <div class="preloader-wrapper">
@@ -116,7 +91,7 @@
               <div class="col-lg-2 col-md-2">
                 <div class="main-logo">
                   <a href="index.html">
-                    <img src="images/main-logo.png" alt="logo">
+                    <img src="{{asset('asset/images/main-logo.png')}}" alt="logo">
                   </a>
                 </div>
               </div>
@@ -130,14 +105,13 @@
                         <a href="index.html" class="item-anchor active d-flex align-item-center" data-effect="Home">Home<i class="icon icon-chevron-down"></i></a>
                         <ul class="submenu">
                           <li><a href="index.html" class="item-anchor active">Home</a></li>
-                          <li><a href="home2.html" class="item-anchor">Home v2<span class="text-primary"> (PRO)</span></a></li>
                         </ul>
                       </li>
 
                       <li><a href="about.html" class="item-anchor" data-effect="About">About</a></li>
 
                       <li class="menu-item has-sub">
-                        <a href="shop.html" class="item-anchor d-flex align-item-center" data-effect="Shop">Kategori<i class="icon icon-chevron-down"></i></a>
+                        <a href="/kategori" class="item-anchor d-flex align-item-center" data-effect="Shop">Kategori<i class="icon icon-chevron-down"></i></a>
                         <ul class="submenu">
                           <li><a href="/kategori" class="item-anchor">Kategori</a></li>
                           <!--<li><a href="shop-slider.html" class="item-anchor">Shop slider<span class="text-primary"> (PRO)</span></a></li>
@@ -185,3 +159,7 @@
       </div>
     </header>
   </html>
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
