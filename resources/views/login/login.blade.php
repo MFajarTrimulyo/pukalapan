@@ -1,6 +1,6 @@
 
 @section('title', 'Login')
-@include('main')
+@include('layouts.main')
 <body class="cat__pages__login">
 <!-- START: pages/login -->
 <div class="cat__pages__login cat__pages__login--fullscreen" style="background-image: url(dist/modules/pages/common/img/login/1.jpg)">
