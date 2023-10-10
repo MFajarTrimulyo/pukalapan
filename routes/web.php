@@ -21,7 +21,7 @@ Route::get('/isi', function () {return view('homepage.isi');});
 Route::get('/search', 'SearchController@search')->name('search');
 
 Route::get('/login', function (){
-    return view('login');
+    return view('login.login');
 });
 
 Route::get('/register', function (){

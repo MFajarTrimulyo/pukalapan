@@ -1,6 +1,6 @@
 
 @section('title', 'Login')
-@include('layouts.main')
+@include('login.layouts.main')
 <body class="cat__pages__login">
 <!-- START: pages/login -->
 <div class="cat__pages__login cat__pages__login--fullscreen" style="background-image: url(dist/modules/pages/common/img/login/1.jpg)">
@@ -9,7 +9,7 @@
             <div class="col-xl-12">
                 <div class="cat__pages__login__block__promo text-white text-center">
                     <h2 class="mb-">
-                        <strong>WELCOME TO EZEELIVE TECHNOLOGIES - ADMIN PANEL</strong>
+                        <strong>WELCOME TO PUKALAPAN</strong>
                     </h2>
                 </div>
                 <div class="cat__pages__login__block__inner">
@@ -36,7 +36,7 @@
 								</ul>
 							</div>
 						@endif	
-                        <form id="form-validation" name="form-validation" method="POST" action="{{ route('login') }}">
+                        <form id="form-validation" name="form-validation" method="POST" action="">
 						{{ csrf_field() }}
                             <div class="form-group">
                                 <label class="form-label">Username</label>
@@ -73,15 +73,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="cat__pages__login__footer text-center">
-        <ul class="list-unstyled list-inline">
-            <li class="list-inline-item"><a href="javascript: void(0);">Terms of Use</a></li>
-            <li class="active list-inline-item"><a href="javascript: void(0);">Compliance</a></li>
-            <li class="list-inline-item"><a href="javascript: void(0);">Confidential Information</a></li>
-            <li class="list-inline-item"><a href="javascript: void(0);">Support</a></li>
-            <li class="list-inline-item"><a href="javascript: void(0);">Contacts</a></li>
-        </ul>
     </div>
 </div>
 <!-- END: pages/login-alpha -->
