@@ -38,3 +38,6 @@ Route::get('/admin/user/create', [App\Http\Controllers\UserController::class, 'c
 Route::get('/admin/buku', [App\Http\Controllers\BukuController::class, 'index'])->name('admin.buku.index');
 Route::get('/admin/buku/create', [App\Http\Controllers\BukuController::class, 'create'])->name('admin.buku.create');
 
+Route::get('/login', function (){
+    return view('login.login');
+});
