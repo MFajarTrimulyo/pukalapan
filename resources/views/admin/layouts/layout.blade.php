@@ -19,6 +19,9 @@
 
     <!-- TEXT AREA EDITOR -->
     <script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
+
+    <!-- TOAST ALERT-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 <body>
   <!-- component -->
@@ -76,5 +79,20 @@
     </main>
   </div>
 </div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script>
+        //message with toastr
+        @if(session()->has('success'))
+        
+            toastr.success('{{ session('success') }}', 'BERHASIL!'); 
+
+        @elseif(session()->has('error'))
+
+            toastr.error('{{ session('error') }}', 'GAGAL!'); 
+            
+        @endif
+    </script>
+
 </body>
 </html>
