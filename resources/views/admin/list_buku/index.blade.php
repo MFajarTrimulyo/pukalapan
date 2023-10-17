@@ -10,7 +10,7 @@
 </head>
 <body>
         <h1 class="text-3xl text-center w-full mb-10 p-4 py-2 rounded-lg bg-brown text-white font-black">LIST BUKU</h1> 
-        <button type="button" onclick="location.href='{{route('admin.buku.create')}}'" class="mb-1 p-2 px-5 bg-bgbtn text-sm text-white font-bold hover:bg-white hover:border-solid border-2 border-bgbtn hover:text-bgbtn hover:duration-200 rounded-full" >TAMBAH BUKU</button>
+        <button type="button" onclick="location.href='{{route('buku.create')}}'" class="mb-1 p-2 px-5 bg-bgbtn text-sm text-white font-bold hover:bg-white hover:border-solid border-2 border-bgbtn hover:text-bgbtn hover:duration-200 rounded-full" >TAMBAH BUKU</button>
         <hr class="my-3">
         <table class="w-full text-sm text-center">
             <thead class="bg-brown bg-opacity-10 uppercase text-brown">
@@ -26,21 +26,34 @@
                 </tr>
             </thead>
             <tbody class="font-medium">
-                <tr class="odd:bg-white even:bg-slate-100">
-                    <td class="border border-r-lightbrown text-semibrown">1</td>
-                    <td class="border border-r-lightbrown text-semibrown">7112323476</td>
-                    <td class="border border-r-lightbrown text-semibrown">7112323476</td>
-                    <td class="border border-r-lightbrown text-semibrown">7112323476</td>
-                    <td class="border border-r-lightbrown text-semibrown">7112323476</td>
-                    <td class="border border-r-lightbrown text-semibrown">7112323476</td>
-                    <td class="border border-r-lightbrown text-semibrown">7112323476</td>
-                    <td>
-                        <a href="#" class="text-semibrown hover:text-bgbtn hover:duration-200"><i class="fa-solid fa-pencil"></i></a>
-                        <a href="#" class="text-semibrown hover:text-red-600 hover:duration-200"><i class="fa-solid fa-trash"></i></a>
-                    </td>
-                </tr>
+                @forelse ($renders as $item)
+                    <tr class="odd:bg-white even:bg-slate-100">
+                        <td class="border border-r-lightbrown text-semibrown">{{ $loop->iteration }}</td>
+                        <td class="border border-r-lightbrown text-semibrown">{{ $item->kd_buku }}</td>
+                        <td class="border border-r-lightbrown text-semibrown">
+                            <img src="{{asset('storage/bukus/'. $item->foto)}}" alt="" class="rounded w-28" >
+                        </td>
+                        <td class="border border-r-lightbrown text-semibrown">{{ $item->judul_buku }}</td>
+                        <td class="border border-r-lightbrown text-semibrown">{{ $item->kategori }}</td>
+                        <td class="border border-r-lightbrown text-semibrown">{{ $item->author }}</td>
+                        <td class="border border-r-lightbrown text-semibrown">{{ $item->sinopsis }}</td>
+                        <td>
+                            <form onsubmit="return confirm('Apakah anda yakin?')" action="{{route('buku.destroy', $item->id)}}" method="POST"></form>
+                            <a href="{{route('buku.edit', $item->id)}}" class="text-semibrown hover:text-bgbtn hover:duration-200"><i class="fa-solid fa-pencil"></i></a>
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="text-semibrown hover:text-red-600 hover:duration-200">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                @empty
+                    
+                @endforelse
+                
             </tbody>
         </table>
+        {{ $renders->links()}}
 </body>
 </html>
 @endsection

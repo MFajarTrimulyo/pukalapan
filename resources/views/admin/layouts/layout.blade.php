@@ -19,6 +19,9 @@
 
     <!-- TEXT AREA EDITOR -->
     <script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
+
+    <!-- TOAST ALERT-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 <body>
   <!-- component -->
@@ -37,25 +40,36 @@
         <aside class="h-full w-auto p-4 flex flex-col items-left justify-left relative rounded-lg bg-white text-brown">
           <!-- Profile -->
           
-          <a href="{{route('admin.user.index')}}">
-            <div class="h-10 w-auto p-2 items-center justify-center rounded-lg cursor-pointer text-brown hover:text-white hover:bg-brown  hover:duration-200 hover:ease-linear focus:bg-lightbrown">
-              <i class="fa-solid fa-user"></i>
-              <span class="ml-2 text-sm font-bold">LIST USER</span>
-            </div>
-          </a>
+          {{-- dropdown Menu User --}}
+          <button class="h-10 w-auto p-2 items-center flex justify-left rounded-lg cursor-pointer text-brown hover:text-white hover:bg-brown  hover:duration-200 hover:ease-linear focus:text-white focus:bg-brown focus:border-2 focus:border-lightbrown">
+            <i class="fa-solid fa-user"></i>
+            <span class="ml-2 mr-2 text-sm font-bold">USER</span>
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+
+            {{-- dropdown Item User --}}
+            <ul class="h-auto w-full my-2 p-2 text-sm font-medium bg-slate-200 rounded-lg">
+              <li><a href="{{route('user.index')}}">- LIST USER</a></li>
+            </ul>
           
-          <a href="{{route('admin.buku.index')}}">
-            <div class="h-10 w-auto p-2 items-center justify-center rounded-lg cursor-pointer text-brown hover:text-white hover:bg-brown  hover:duration-200 hover:ease-linear focus:bg-lightbrown">  
-              <i class="fa-solid fa-book"></i>
-              <span class="ml-2 text-sm font-bold">LIST BUKU</span>
-            </div>
-          </a>
-          
-          
-          <div class="h-10 w-auto p-2 items-center justify-center rounded-lg cursor-pointer text-brown hover:text-white hover:bg-brown  hover:duration-200 hover:ease-linear focus:bg-lightbrown">
+          {{-- dropdown Menu Buku --}}
+          <button class="h-10 w-auto p-2 items-center flex justify-left rounded-lg cursor-pointer text-brown hover:text-white hover:bg-brown  hover:duration-200 hover:ease-linear focus:text-white focus:bg-brown focus:border-2 focus:border-lightbrown">  
             <i class="fa-solid fa-book"></i>
-            <span class="ml-2 text-sm font-bold">LIST PEPUSTAKAAN</span>
-          </div>
+            <span class="ml-2 mr-2 text-sm font-bold">BUKU</span>
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+
+            {{-- dropdown Item User --}}
+            <ul class="h-auto w-full my-2 p-2 text-sm font-medium bg-slate-200 rounded-lg">
+              <li><a href="{{route('buku.index')}}">- LIST BUKU</a></li>
+            </ul>
+          
+          {{-- dropdown Menu Perpustakaan --}}
+          <button class="h-10 w-auto p-2 items-center flex justify-left rounded-lg cursor-pointer text-brown hover:text-white hover:bg-brown  hover:duration-200 hover:ease-linear focus:text-white focus:bg-brown focus:border-2 focus:border-lightbrown">
+            <i class="fa-solid fa-book"></i>
+            <span class="ml-2 text-sm font-bold">PEPUSTAKAAN</span>
+              <i class="fa-solid fa-angle-down"></i>
+          </button>
         </aside> 
 
         <div class="h-full rounded-lg p-5 -mr-4 ml-4 flex-shrink-0 flex-grow bg-white overflow-y-scroll">
@@ -65,5 +79,20 @@
     </main>
   </div>
 </div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script>
+        //message with toastr
+        @if(session()->has('success'))
+        
+            toastr.success('{{ session('success') }}', 'BERHASIL!'); 
+
+        @elseif(session()->has('error'))
+
+            toastr.error('{{ session('error') }}', 'GAGAL!'); 
+            
+        @endif
+    </script>
+
 </body>
 </html>
