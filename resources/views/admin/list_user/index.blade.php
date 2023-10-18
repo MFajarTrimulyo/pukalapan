@@ -10,7 +10,7 @@
 </head>
 <body>
         <h1 class="text-3xl text-center w-full mb-10 p-4 py-2 rounded-lg bg-brown text-white font-black">LIST USER</h1> 
-        <button type="button" onclick="location.href='{{route('admin.user.create')}}'" class="mb-1 p-2 px-5 bg-bgbtn text-sm text-white font-bold hover:bg-white hover:border-solid border-2 border-bgbtn hover:text-bgbtn hover:duration-200 rounded-full" >TAMBAH AKUN</button>
+        <button type="button" onclick="location.href='{{route('user.create')}}'" class="mb-1 p-2 px-5 bg-bgbtn text-sm text-white font-bold hover:bg-white hover:border-solid border-2 border-bgbtn hover:text-bgbtn hover:duration-200 rounded-full" >TAMBAH AKUN</button>
         <hr class="my-3">
         <table class="w-full text-sm text-center">
             <thead class="bg-brown bg-opacity-10 uppercase text-brown">
