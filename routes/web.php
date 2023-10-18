@@ -28,7 +28,7 @@ Route::get('/forget', function (){
     return view('forget');
 });
 
-Route::resource('/admin/buku/kategori', App\Http\Controllers\KategoriBukuController:class);
+Route::resource('/admin/buku/kategori', App\Http\Controllers\KategoriBukuController::class);
 Route::resource('/admin/user', App\Http\Controllers\UserController::class);
 Route::resource('/admin/buku', App\Http\Controllers\BukuController::class);
 
