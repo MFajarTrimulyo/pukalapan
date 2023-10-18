@@ -25,6 +25,8 @@
                     <th scope="col">Action</th>
                 </tr>
             </thead>
+
+            @f
             <tbody class="font-medium">
                 <tr class="odd:bg-white even:bg-slate-100">
                     <td class="border border-r-lightbrown text-semibrown">1</td>
