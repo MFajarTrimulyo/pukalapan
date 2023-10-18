@@ -48,7 +48,7 @@
             <button type="button" class="mt-6 p-2 px-5 bg-lightbrown text-sm text-white font-bold hover:bg-white hover:border-solid border-2 border-lightbrown hover:text-lightbrown hover:duration-200 rounded-full" ><a href="">ADD ACCOUNT</a></button>
         </div>
 
-        <div class="w-40 h-40 ml-24 bg-brown rounded-full"></div>
+        <div class="w-40 h-40 ml-24 bg-slate-400 rounded-full"></div>
     </div>
         
     </body>

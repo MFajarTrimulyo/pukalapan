@@ -18,31 +18,35 @@
                     <th class="border border-r-lightbrown" scope="col">No</th>
                     <th class="border border-r-lightbrown" scope="col">Foto Profil</th>
                     <th class="border border-r-lightbrown" scope="col">Nama</th>
-                    <th class="border border-r-lightbrown" scope="col">Username</th>
+                    <!-- <th class="border border-r-lightbrown" scope="col">Username</th> -->
                     <th class="border border-r-lightbrown" scope="col">Email</th>
-                    <th class="border border-r-lightbrown" scope="col">Password</th>
+                    <th class="border border-r-lightbrown" scope="col">Role</th>
                     <th class="border border-r-lightbrown" scope="col">Activation</th>
                     <th scope="col">Action</th>
                 </tr>
             </thead>
 
-            @f
+            
             <tbody class="font-medium">
+            @forelse ($renders as $item)
                 <tr class="odd:bg-white even:bg-slate-100">
-                    <td class="border border-r-lightbrown text-semibrown">1</td>
-                    <td class="border border-r-lightbrown text-semibrown">7112323476</td>
-                    <td class="border border-r-lightbrown text-semibrown">7112323476</td>
-                    <td class="border border-r-lightbrown text-semibrown">7112323476</td>
-                    <td class="border border-r-lightbrown text-semibrown">7112323476</td>
-                    <td class="border border-r-lightbrown text-semibrown">7112323476</td>
-                    <td class="border border-r-lightbrown text-semibrown">7112323476</td>
+                    <td class="border border-r-lightbrown text-semibrown">{{$loop->iteration}}</td>
+                    <td class="border border-r-lightbrown text-semibrown">{{$item->foto}}</td>
+                    <td class="border border-r-lightbrown text-semibrown">{{$item->name}}</td>
+                    <td class="border border-r-lightbrown text-semibrown">{{$item->email}}</td>
+                    <td class="border border-r-lightbrown text-semibrown">{{$item->role}}</td>
+                    <td class="border border-r-lightbrown text-semibrown">{{$item->activation}}</td>
                     <td>
-                        <a href="#" class="text-semibrown hover:text-bgbtn hover:duration-200"><i class="fa-solid fa-pencil"></i></a>
+                        <a href="{{route ('user.edit', $item->id)}}" class="text-semibrown hover:text-bgbtn hover:duration-200"><i class="fa-solid fa-pencil"></i></a>
                         <a href="#" class="text-semibrown hover:text-red-600 hover:duration-200"><i class="fa-solid fa-trash"></i></a>
                     </td>
                 </tr>
+                @empty
+                @endforelse
             </tbody>
+
         </table>
+        {{$renders->links()}}
 </body>
 </html>
 @endsection
