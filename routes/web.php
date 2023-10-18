@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', function () {
+Route::get('/homepage', function () {
     return view('user.homepage.index');
 });
 
@@ -20,12 +20,12 @@ Route::get('/kategori', function () { return view('user.kategori.home-kategori')
 Route::get('/isi', function () {return view('user.homepage.isi');});
 // Route::get('/search', 'SearchController@search')->name('search');
 
-Route::get('/login', function (){
+Route::get('/', function (){
     return view('login.login');
 });
 
 Route::get('/register', function (){
-    return view('register');
+    return view('login.register');
 });
 
 Route::get('/forget', function (){

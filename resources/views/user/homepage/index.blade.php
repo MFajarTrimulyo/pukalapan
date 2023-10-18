@@ -33,7 +33,7 @@
 <body style="background-color: white;">
 
 
-<div id="app" class="app">
+<div>
     @include('user.layout.t-header') <!-- Menambahkan header -->
     @include('user.layout.banner')
 </div>
