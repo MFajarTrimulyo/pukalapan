@@ -49,7 +49,7 @@
 
             {{-- dropdown Item User --}}
             <ul class="h-auto w-full my-2 p-2 text-sm font-medium bg-slate-200 rounded-lg">
-              <li><a href="{{route('admin.user.index')}}">- LIST USER</a></li>
+              <li><a href="{{route('user.index')}}">- LIST USER</a></li>
             </ul>
           
           {{-- dropdown Menu Buku --}}
@@ -61,7 +61,7 @@
 
             {{-- dropdown Item User --}}
             <ul class="h-auto w-full my-2 p-2 text-sm font-medium bg-slate-200 rounded-lg">
-              <li><a href="{{route('admin.buku.index')}}">- LIST BUKU</a></li>
+              <li><a href="{{route('buku.index')}}">- LIST BUKU</a></li>
             </ul>
           
           {{-- dropdown Menu Perpustakaan --}}
