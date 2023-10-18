@@ -21,11 +21,7 @@ Route::get('/isi', function () {return view('user.homepage.isi');});
 // Route::get('/search', 'SearchController@search')->name('search');
 
 Route::get('/', function (){
-    return view('login.login');
-});
-
-Route::get('/register', function (){
-    return view('login.register');
+    return view('welcome');
 });
 
 Route::get('/forget', function (){
@@ -38,7 +34,6 @@ Route::get('/admin/user/create', [App\Http\Controllers\UserController::class, 'c
 Route::resource('/admin/user', App\Http\Controllers\UserController::class);
 Route::resource('/admin/buku', App\Http\Controllers\BukuController::class);
 
+Auth::routes();
 
-Route::get('/login', function (){
-    return view('login.login');
-});
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
