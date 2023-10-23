@@ -61,13 +61,14 @@
 
             {{-- dropdown Item User --}}
             <ul class="h-auto w-full my-2 p-2 text-sm font-medium bg-slate-200 rounded-lg">
-              <li><a href="{{route('buku.index')}}">- LIST BUKU</a></li>
+              <li class="my-1"><a href="{{route('buku.index')}}">- LIST BUKU</a></li>
+              <li class="my-1"><a href="{{route('buku.index')}}">- LIST KATEGORI</a></li>
             </ul>
           
           {{-- dropdown Menu Perpustakaan --}}
           <button class="h-10 w-auto p-2 items-center flex justify-left rounded-lg cursor-pointer text-brown hover:text-white hover:bg-brown  hover:duration-200 hover:ease-linear focus:text-white focus:bg-brown focus:border-2 focus:border-lightbrown">
             <i class="fa-solid fa-book"></i>
-            <span class="ml-2 text-sm font-bold">PEPUSTAKAAN</span>
+            <span class="ml-2 mr-2 text-sm font-bold">PEPUSTAKAAN</span>
               <i class="fa-solid fa-angle-down"></i>
           </button>
         </aside> 
