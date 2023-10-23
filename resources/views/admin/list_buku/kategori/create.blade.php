@@ -12,69 +12,49 @@
 
     <body>
 
-        <div class="flex">
-            <form action="{{route('buku.store')}}"method="POST" enctype="multipart/form-data">
-            <div class="">
+        <div>
+            <form action="{{ route('kategori.store') }}" method="POST" enctype="multipart/form-data">
+                @csrf
                 <div class="mt-2 mb-2">
-                    <label for="kode" class="mb-1 text-3xl text-brown font-bebas">KODE BUKU</label>
+                    <label for="kategori" class="mb-1 text-3xl text-brown font-bebas">NAMA KATEGORI BUKU</label>
                     <hr class="w-72">
-                    <input type="text" class="invalid"
+                    <input type="text" id="kategori"
                         class="w-72 mt-4 p-1 text-brown font-medium border-2 border-brown bg-slate-100 placeholder-brown placeholder-opacity-75"
-                        placeholder="Enter your book code here">
+                        name="nama_kategori" value="{{ old('nama_kategori') }}" placeholder="Enter your category book here">
                 </div>
 
-                <div class="mt-4 mb-2 ">
-                        <label for="foto" class="mb-1 text-3xl text-brown font-bebas">FOTO BUKU</label>
-                        <hr class="w-72">
-                        <input type="file" id="imagebuku"
-                            class="w-72 mt-4 p-1 text-brown font-medium border-2 border-brown bg-slate-100 placeholder-brown placeholder-opacity-75">
-                </div>
-
-                <div class="flex space-x-6">
-                    <div class="mt-2 mb-2">
-                        <label for="judul" class="mb-1 text-3xl text-brown font-bebas">JUDUL BUKU</label>
-                        <hr class="w-72">
-                        <input type="text" id="judul"
-                            class="w-72 mt-4 p-1 text-brown font-medium border-2 border-brown bg-slate-100 placeholder-brown placeholder-opacity-75"
-                            placeholder="Enter your book title here">
+                @error('nama_kategori')
+                    <div id="error-message"
+                        class="bg-red-100 border border-red-400 text-red-700 mt-4 px-4 py-3 max-w-md rounded relative"
+                        role="alert">
+                        <strong class="font-bold">Error!</strong>
+                        <span class="block sm:inline">{{ $message }}</span>
+                        <span id="close-error" class="absolute top-0 bottom-0 right-0 px-4 py-3">
+                            <svg class="fill-current h-6 w-6 text-red-500" role="button" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20">
+                                <title>Close</title>
+                                <path
+                                    d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z" />
+                            </svg>
+                        </span>
                     </div>
+                @enderror
 
-                    <div class="mt-2 mb-2">
-                        <label for="author" class="mb-1 text-3xl text-brown font-bebas">AUTHOR</label>
-                        <hr class="w-72">
-                        <input type="text" id="author"
-                            class="w-72 mt-4 p-1 text-brown font-medium border-2 border-brown bg-slate-100 placeholder-brown placeholder-opacity-75"
-                            placeholder="Enter your book author here">
-                    </div>
 
-                    
-                    <div class="mt-2 mb-2">
-                        <label for="kategori" class="mb-1 text-3xl text-brown font-bebas">KATEGORI</label>
-                        <hr class="w-72">
-                        <select class="w-72 mt-4 p-1 text-brown font-medium border-2 border-brown bg-slate-100" name="" id="">
-                            <option value="SEJARAH">SEJARAH</option>
-                            <option value="FIKSI">FIKSI</option>
-                            <option value="KOMIK">KOMIK</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="mt-2 mb-2">
-                        <label for="sinopsis" class="mb-1 text-3xl text-brown font-bebas">SINOPSIS</label>
-                        <hr class="w-72 mb-4">
-                        <textarea class="w-full mt-4 p-1 text-brown font-medium border-2 border-brown bg-white placeholder-brown placeholder-opacity-75" name="sinopsis" rows="5" placeholder="Enter your synopsis here"></textarea>
-                    </div>
                 <button type="submit"
                     class="mt-4 p-2 px-10 bg-brown text-sm text-white font-bold hover:bg-white hover:border-solid border-2 border-brown hover:text-brown hover:duration-200 rounded-full">
                     SUBMIT
                 </button>
-            </div>
             </form>
         </div>
-<script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
-<script>
-    CKEDITOR.replace( 'sinopsis' );
-</script>
     </body>
+    <script>
+        $(document).ready(function() {
+            $('#close-error').on('click', function() {
+                $('#error-message').hide();
+            });
+        });
+    </script>
+
     </html>
 @endsection
