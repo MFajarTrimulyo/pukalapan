@@ -11,7 +11,8 @@
     </head>
 
     <body>
-        <h1 class="text-3xl text-center w-full mb-10 p-4 py-2 rounded-lg bg-brown text-white font-black">LIST BUKU</h1>
+        <h1 class="text-3xl text-center w-full mb-10 p-4 py-2 rounded-lg bg-brown text-white font-black">LIST KATEGORI BUKU
+        </h1>
         <button type="button" onclick="location.href='{{ route('kategori.create') }}'"
             class="mb-1 p-2 px-5 bg-bgbtn text-sm text-white font-bold hover:bg-white hover:border-solid border-2 border-bgbtn hover:text-bgbtn hover:duration-200 rounded-full">TAMBAH
             KATEGORI BUKU</button>

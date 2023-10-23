@@ -11,7 +11,7 @@ use Illuminate\View\View;
 class KategoriBukuController extends Controller
 {
     public function index(): View{
-        $renders = KategoriBuku::latest()->paginate(8);
+        $renders = KategoriBuku::latest()->paginate(6);
         return view('admin.list_buku.kategori.index', compact('renders'));
     }
 
