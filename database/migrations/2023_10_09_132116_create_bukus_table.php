@@ -16,11 +16,14 @@ return new class extends Migration
             $table->string('kd_buku');
             $table->string('foto');
             $table->string('judul_buku');
-            $table->string('kategori');
+            $table->unsignedBigInteger('kategoriId');
             $table->string('author');
+            $table->string('stock');
             $table->text('sinopsis');
                    
             $table->timestamps();
+
+            $table->foreign('kategoriId')->references('id')->on('kategori_bukus')->onDelete('cascade');
         });
     }
 

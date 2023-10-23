@@ -13,8 +13,13 @@ class Buku extends Model
         'kd_buku',
         'foto',
         'judul_buku',
-        'kategori',
+        'kategoriId',
         'author',
+        'stock',
         'sinopsis',
     ];
+
+    public function kategori_bukus(){
+        return $this->belongsTo(KategoriBuku::class, 'kategoriId');
+    }
 }
