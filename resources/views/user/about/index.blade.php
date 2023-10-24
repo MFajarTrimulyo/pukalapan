@@ -32,6 +32,7 @@
 
 @include('user.about.about')
 
+@include('user.layout.footer')
 </body>
 </html>
 <script src="{{asset ('js/jquery-1.11.0.min.js')}}"></script>
