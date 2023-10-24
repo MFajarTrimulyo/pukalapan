@@ -30,7 +30,7 @@ class BukuController extends Controller
     public function store(Request $request): RedirectResponse{
         $this->validate($request, [
             'kd_buku' => 'required|max:5',
-            'foto' => 'required|image|mimes:jpg, jpeg, png|max:2048',
+            'foto' => 'required|image|mimes:jpg, jpeg, png',
             'judul_buku' => 'required',
             'kategoriId' => 'required|exists:kategori_bukus,id',
             'author' => 'required',
@@ -64,7 +64,7 @@ class BukuController extends Controller
     public function update(Request $request, $id): RedirectResponse{
         $this->validate($request, [
             'kd_buku' => 'required|max:5',
-            'foto' => 'image|mimes:jpg,jpeg,png|max:2048',
+            'foto' => 'image',
             'judul_buku' => 'required',
             'kategoriId' => 'required|exists:kategori_bukus,id',
             'author' => 'required',

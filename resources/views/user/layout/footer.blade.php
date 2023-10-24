@@ -1,4 +1,4 @@
-@section('footer')
+
 
 <footer id="footer">
       <div class="container">
@@ -6,10 +6,10 @@
           <div class="row d-flex flex-wrap justify-content-between">
             <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="footer-menu">
-                <h5 class="widget-title">Ultras</h5>
+                <h5 class="widget-title">Pukulapan</h5>
                 <ul class="menu-list list-unstyled">
                   <li class="menu-item">
-                    <a href="about.html">About us</a>
+                    <a href="/about">About us</a>
                   </li>
                   <li class="menu-item">
                     <a href="#">Conditions </a>
@@ -57,16 +57,16 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="footer-menu">
                 <h5 class="widget-title">Contact Us</h5>
-                <p>Do you have any questions or suggestions? <a href="#" class="email">ourservices@ultras.com</a>
+                <p>Saran & masukan <a href="#" class="email">admin.admind@ultras.com</a>
                 </p>
-                <p>Do you need assistance? Give us a call. <br>
-                  <strong>+57 444 11 00 35</strong>
+                <p>Hubungi <br>
+                  <strong>+62 812400332</strong>
                 </p>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="footer-menu">
-                <h5 class="widget-title">Forever 2018</h5>
+                <h5 class="widget-title">Forever 2023</h5>
                 <p>Cras mattis sit ornare in metus eu amet adipiscing enim. Ullamcorper in orci, ultrices integer eget arcu. Consectetur leo dignissim lacus, lacus sagittis dictumst.</p>
                 <div class="social-links">
                   <ul class="d-flex list-unstyled">
@@ -99,5 +99,3 @@
       </div>
       <hr>
     </footer>
-
-@endsection

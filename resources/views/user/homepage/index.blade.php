@@ -32,20 +32,14 @@
 </head>
 <body style="background-color: white;">
 
-
-<div>
     @include('user.layout.t-header') <!-- Menambahkan header -->
     @include('user.layout.banner')
-</div>
 
-<div class="conten">
-@include('user.homepage.isi')
-<!-- conten 2 -->
-<div class="konten-2">
+    <!-- Isi -->
+    @include('user.homepage.isi')
 
-</div>
-
-<!-- footer --> 
+    <!-- Footer -->
+    @include('user.layout.footer')
 </body>
 <script src="{{asset ('js/jquery-1.11.0.min.js')}}"></script>
     <script src="{{asset ('js/plugins.js')}}"></script>
