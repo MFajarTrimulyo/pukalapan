@@ -16,7 +16,7 @@ Route::get('/homepage', function () {
     return view('user.homepage.index');
 });
 
-Route::get('/kategori', function () { return view('user.kategori.home-kategori'); });
+Route::get('/kategori', [App\Http\Controllers\HomeController::class, 'homekategori'])->name('kategori');
 Route::get('/isi', function () {return view('user.homepage.isi');});
 
 // Route::get('/search', 'SearchController@search')->name('search');

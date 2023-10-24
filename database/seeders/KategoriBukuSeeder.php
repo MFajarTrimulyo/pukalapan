@@ -15,15 +15,15 @@ class KategoriBukuSeeder extends Seeder
     {
         $categories = [
             'Umum',
-            'Filsafat dan Psikologi',
+            'Filsafat & Psikologi',
             'Agama',
             'Sosial',
             'Bahasa',
-            'Sains dan Matematika',
+            'Sains & Matematika',
             'Teknologi',
-            'Seni dan Rekreasi',
-            'Literatur dan Sastra',
-            'Sejarah dan Geografi',
+            'Seni & Rekreasi',
+            'Literatur & Sastra',
+            'Sejarah & Geografi',
         ];
 
         foreach ($categories as $category) {
