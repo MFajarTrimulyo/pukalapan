@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pukulapan - Kategori</title>
+    <title>Pukulapan - Chat</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,28 +32,21 @@
 </head>
 <body style="background-color: white;">
 
-@include('user.layout.t-header')
 
-<!-- Banner Kategori -->
+<div id="app" class="app">
+    @include('user.layout.t-header') <!-- Menambahkan header -->
+</div>
 
-<section class="site-banner jarallax min-height300 padding-large" style="background: url({{asset ('img/cover.jpg')}}) no-repeat; background-position: top;">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1 style="Color: white;"class="page-title">Welcome to Pukalapan</h1>
-            <div class="breadcrumbs">
-              <span class="item">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<div class="conten">
+@include('user.chat.chat')
+<!-- conten 2 -->
+<div class="konten-2">
 
-    <!-- Conten -->
+</div>
 
-@include('user.kategori.isi')
-
-</html>
-    <script src="js/jquery-1.11.0.min.js"></script>
+<!-- footer --> 
+</body>
+<script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/script.js"></script>
+</html>

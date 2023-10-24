@@ -20,25 +20,25 @@
         
         <ul class="cat-list">
           <li class="cat-list-item">
-            <a href="shop.html" title="Men Jackets">All</a>
+            <a href="/kategori" title="Men Jackets">All</a>
           </li>
           <li class="cat-list-item">
-            <a href="shop.html" title="Fashion">Paket</a>
+            <a href="/kategori" title="Fashion">Paket</a>
           </li>
           <li class="cat-list-item">
-            <a href="shop.html" title="Casual Wears">Cerita</a>
+            <a href="/kategori" title="Casual Wears">Cerita</a>
           </li>
           <li class="cat-list-item">
-            <a href="shop.html" title="Women">Women</a>
+            <a href="/kategori" title="Women">Women</a>
           </li>
           <li class="cat-list-item">
-            <a href="shop.html" title="Trending">Trending</a>
+            <a href="/kategori" title="Trending">Trending</a>
           </li>
           <li class="cat-list-item">
-            <a href="shop.html" title="Hoodie">Hoodie</a>
+            <a href="/kategori" title="Hoodie">Hoodie</a>
           </li>
           <li class="cat-list-item">
-            <a href="shop.html" title="Kids">Kids</a>
+            <a href="/kategori" title="Kids">Kids</a>
           </li>
         </ul>
 
@@ -102,25 +102,25 @@
                     <ul class="menu-list">
 
                       <li class="menu-item has-sub">
-                        <a href="/homepage" class="item-anchor active d-flex align-item-center" data-effect="Home">Home<i class="icon icon-chevron-down"></i></a>
+                        <a href="/" class="item-anchor active d-flex align-item-center" data-effect="Home">Home<i class="icon icon-chevron-down"></i></a>
                         <ul class="submenu">
-                          <li><a href="/homepage" class="item-anchor active">Home</a></li>
+                          <li><a href="/" class="item-anchor active">Home</a></li>
                         </ul>
                       </li>
 
-                      <li><a href="about.html" class="item-anchor" data-effect="About">About</a></li>
+                      <li><a href="/about" class="item-anchor" data-effect="About">About</a></li>
 
                       <li class="menu-item has-sub">
                         <a href="/kategori" class="item-anchor d-flex align-item-center" data-effect="Shop">Kategori<i class="icon icon-chevron-down"></i></a>
                         <ul class="submenu">
                           <li><a href="/kategori" class="item-anchor">Kategori</a></li>
-                          <!--<li><a href="shop-slider.html" class="item-anchor">Shop slider<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="shop-grid.html" class="item-anchor">Shop grid<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="shop-list.html" class="item-anchor">Shop list<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="single-product.html" class="item-anchor">Single product<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="cart.html" class="item-anchor">Cart<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="wishlist.html" class="item-anchor">Wishlist<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="checkout.html" class="item-anchor">Checkout<span class="text-primary"> (PRO)</span></a></li> -->
+                          <li><a href="/kategori" class="item-anchor">All<span class="text-primary"> (PRO)</span></a></li>
+                          <li><a href="/kategori" class="item-anchor">Umum<span class="text-primary"> (PRO)</span></a></li>
+                          <li><a href="/kategori" class="item-anchor">Study<span class="text-primary"> (PRO)</span></a></li>
+                          <li><a href="/kategori" class="item-anchor">Sastra<span class="text-primary"> (PRO)</span></a></li>
+                          <li><a href="cart.html" class="item-anchor">Fabel<span class="text-primary"> (PRO)</span></a></li>
+                          <li><a href="wishlist.html" class="item-anchor">Cerita<span class="text-primary"> (PRO)</span></a></li>
+                          <li><a href="checkout.html" class="item-anchor">Teknologi<span class="text-primary"> (PRO)</span></a></li>
                         </ul>
                       </li>
 
@@ -137,9 +137,9 @@
                       </li>
 
                       <li class="menu-item has-sub">
-                        <a href="blog.html" class="item-anchor d-flex align-item-center" data-effect="Blog">Chat<i class="icon icon-chevron-down"></i></a>
+                        <a href="/chat" class="item-anchor d-flex align-item-center" data-effect="Blog">Chat<i class="icon icon-chevron-down"></i></a>
                         <ul class="submenu">
-                          <li><a href="blog.html" class="item-anchor">Blog</a></li>
+                          <li><a href="/chat" class="item-anchor">Chat</a></li>
                           <li><a href="blog-sidebar.html" class="item-anchor">Blog with sidebar<span class="text-primary"> (PRO)</span></a></li>
                           <li><a href="blog-masonry.html" class="item-anchor">Blog masonry<span class="text-primary"> (PRO)</span></a></li>
                           <li><a href="single-post.html" class="item-anchor">Single post</a></li>

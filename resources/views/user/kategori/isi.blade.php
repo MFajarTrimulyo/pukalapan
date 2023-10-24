@@ -992,6 +992,8 @@
             </div>
           </section>
 
+          <!-- Side Bar kategori  -->
+
           <aside class="col-md-3">
             <div class="sidebar">
               <div class="widgets widget-menu">
