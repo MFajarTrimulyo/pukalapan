@@ -18,7 +18,11 @@ Route::get('/homepage', function () {
 
 Route::get('/kategori', function () { return view('user.kategori.home-kategori'); });
 Route::get('/isi', function () {return view('user.homepage.isi');});
+
 // Route::get('/search', 'SearchController@search')->name('search');
+Route::get('/about', function () {return view('user.about.index');});
+Route::get('/chat', function () {return view('user.chat.index');});
+
 
 Route::get('/', function (){
     return view('welcome');
