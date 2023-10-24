@@ -39,7 +39,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1 style="Color: white;"class="page-title">Welcome to Pukalapan</h1>
+            <h1 style="Color: white;"class="page-title">Kategori</h1>
             <div class="breadcrumbs">
               <span class="item">
             </div>
@@ -52,6 +52,7 @@
 
 @include('user.kategori.isi')
 
+@include('layout.footer')
 </html>
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/plugins.js"></script>

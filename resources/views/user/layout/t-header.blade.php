@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<body>
-  
+
   <div class="preloader-wrapper">
       <div class="preloader">
       </div>
@@ -158,8 +155,5 @@
         </nav>
       </div>
     </header>
-  </html>
 
-  <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/script.js"></script>
+  
