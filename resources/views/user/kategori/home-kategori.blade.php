@@ -35,16 +35,13 @@
 
 <!-- Banner Kategori -->
 
-<section class="site-banner jarallax min-height300 padding-large" style="background: url({{asset ('img/bg2.jpg')}}) no-repeat; background-position: top;">
+<section class="site-banner jarallax min-height300 padding-large" style="background: url({{asset ('img/cover.jpg')}}) no-repeat; background-position: top;">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1 style="Color: white;"class="page-title">Shop page</h1>
+            <h1 style="Color: white;"class="page-title">Welcome to Pukalapan</h1>
             <div class="breadcrumbs">
               <span class="item">
-                <a style="Color: white;" href="index.html">Home /</a>
-              </span>
-              <span style="Color: white;" class="item">Shop</span>
             </div>
           </div>
         </div>

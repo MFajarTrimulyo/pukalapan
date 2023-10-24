@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Ultras - Clothing Store eCommerce Store HTML Website Template</title>
+    <title>Pukalapan</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,13 +34,13 @@
             <div class="container">
               <ul class="tabs list-unstyled">
                 <li data-tab-target="#all" class="active tab">All</li>
-                <li data-tab-target="#shoes" class="tab">Shoes</li>
-                <li data-tab-target="#tshirts" class="tab">Tshirts</li>
-                <li data-tab-target="#pants" class="tab">Pants</li>
-                <li data-tab-target="#hoodie" class="tab">Hoodie</li>
-                <li data-tab-target="#outer" class="tab">Outer</li>
-                <li data-tab-target="#jackets" class="tab">Jackets</li>
-                <li data-tab-target="#accessories" class="tab">Accessories</li>
+                <li data-tab-target="#ipa" class="tab">ipa</li>
+                <li data-tab-target="#ips" class="tab">ips</li>
+                <li data-tab-target="#pkn" class="tab">pkn</li>
+                <li data-tab-target="#bindonesia" class="tab">B Indonesia</li>
+                <li data-tab-target="#binggris" class="tab">B Inggris</li>
+                <li data-tab-target="#pai" class="tab">Pai</li>
+                <li data-tab-target="#senibudaya" class="tab">Seni Budaya</li>
               </ul>
               <div class="tab-content">
                 <div id="all" data-tab-content class="active">
@@ -65,9 +65,9 @@
                       </div>
                       <div class="product-detail">
                         <h3 class="product-title">
-                          <a href="single-product.html">Half sleeve T-shirt</a>
+                          <a href="single-product.html">Ipa</a>
                         </h3>
-                        <div class="item-price text-primary">$40.00</div>
+                        <div class="item-price text-primary">Ready</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -90,9 +90,9 @@
                       </div>
                       <div class="product-detail">
                         <h3 class="product-title">
-                          <a href="single-product.html">Stylish Grey T-shirt</a>
+                          <a href="single-product.html">Ips</a>
                         </h3>
-                        <div class="item-price text-primary">$35.00</div>
+                        <div class="item-price text-primary">Ready</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -115,9 +115,9 @@
                       </div>
                       <div class="product-detail">
                         <h3 class="product-title">
-                          <a href="single-product.html">Silk White Shirt</a>
+                          <a href="single-product.html">Pkn</a>
                         </h3>
-                        <div class="item-price text-primary">$35.00</div>
+                        <div class="item-price text-primary">Ready</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -140,9 +140,9 @@
                       </div>
                       <div class="product-detail">
                         <h3 class="product-title">
-                          <a href="single-product.html">Grunge Hoodie</a>
+                          <a href="single-product.html">B Indonesia</a>
                         </h3>
-                        <div class="item-price text-primary">$30.00</div>
+                        <div class="item-price text-primary">Ready</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -165,9 +165,9 @@
                       </div>
                       <div class="product-detail">
                         <h3 class="product-title">
-                          <a href="single-product.html">Full sleeve Jeans jacket</a>
+                          <a href="single-product.html">B Inggris</a>
                         </h3>
-                        <div class="item-price text-primary">$40.00</div>
+                        <div class="item-price text-primary">Ready</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -190,9 +190,9 @@
                       </div>
                       <div class="product-detail">
                         <h3 class="product-title">
-                          <a href="single-product.html">Grey Check Coat</a>
+                          <a href="single-product.html">Pai</a>
                         </h3>
-                        <div class="item-price text-primary">$30.00</div>
+                        <div class="item-price text-primary">Ready</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -215,9 +215,9 @@
                       </div>
                       <div class="product-detail">
                         <h3 class="product-title">
-                          <a href="single-product.html">Long Sleeve T-shirt</a>
+                          <a href="single-product.html">Seni Budaya</a>
                         </h3>
-                        <div class="item-price text-primary">$40.00</div>
+                        <div class="item-price text-primary">Ready</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -240,9 +240,9 @@
                       </div>
                       <div class="product-detail">
                         <h3 class="product-title">
-                          <a href="single-product.html">Half Sleeve T-shirt</a>
+                          <a href="single-product.html">Fisika</a>
                         </h3>
-                        <div class="item-price text-primary">$35.00</div>
+                        <div class="item-price text-primary">Ready</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -265,9 +265,9 @@
                       </div>
                       <div class="product-detail">
                         <h3 class="product-title">
-                          <a href="single-product.html">Orange white Nike</a>
+                          <a href="single-product.html">Kimia</a>
                         </h3>
-                        <div class="item-price text-primary">$55.00</div>
+                        <div class="item-price text-primary">Ready</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -290,9 +290,9 @@
                       </div>
                       <div class="product-detail">
                         <h3 class="product-title">
-                          <a href="single-product.html">Running Shoe</a>
+                          <a href="single-product.html">Biologi</a>
                         </h3>
-                        <div class="item-price text-primary">$65.00</div>
+                        <div class="item-price text-primary">Ready</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -315,9 +315,9 @@
                       </div>
                       <div class="product-detail">
                         <h3 class="product-title">
-                          <a href="single-product.html">Tennis Shoe</a>
+                          <a href="single-product.html">Penjaskes</a>
                         </h3>
-                        <div class="item-price text-primary">$80.00</div>
+                        <div class="item-price text-primary">Ready</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -340,9 +340,9 @@
                       </div>
                       <div class="product-detail">
                         <h3 class="product-title">
-                          <a href="single-product.html">Nike Brand Shoe</a>
+                          <a href="single-product.html">Kejurusan</a>
                         </h3>
-                        <div class="item-price text-primary">$65.00</div>
+                        <div class="item-price text-primary">Ready</div>
                       </div>
                     </div>
                   </div>
@@ -1002,64 +1002,32 @@
                   </form>
                 </div> 
               </div>
-              <div class="widgets widget-product-tags">
-                <h5 class="widget-title">Tags</h5>
-                <ul class="product-tags sidebar-list list-unstyled">
-                  <li class="tags-item">
-                    <a href="">White</a>
+              <div class="widgets widget-product-bukumapel">
+                <h5 class="widget-title">Buku Mapel</h5>
+                <ul class="product-bukumapel sidebar-list list-unstyled">
+                  <li class="bukumapel-item">
+                    <a href="">Ipa</a>
                   </li>
-                  <li class="tags-item">
-                    <a href="">Cheap</a>
+                  <li class="bukumapel-item">
+                    <a href="">Ips</a>
                   </li>
-                  <li class="tags-item">
-                    <a href="">Branded</a>
+                  <li class="bukumapel-item">
+                    <a href="">Pkn</a>
                   </li>
-                  <li class="tags-item">
-                    <a href="">Modern</a>
+                  <li class="bukumapel-item">
+                    <a href="">B Indonesia</a>
                   </li>
-                  <li class="tags-item">
-                    <a href="">Simple</a>
+                  <li class="bukumapel-item">
+                    <a href="">B Inggris</a>
                   </li>
-                </ul>
-              </div>
-              <div class="widgets widget-product-brands">
-                <h5 class="widget-title">Brands</h5>
-                <ul class="product-tags sidebar-list list-unstyled">
-                  <li class="tags-item">
-                    <a href="">Nike</a>
+                  <li class="bukumapel-item">
+                    <a href="">Pai</a>
                   </li>
-                  <li class="tags-item">
-                    <a href="">Adidas</a>
-                  </li>
-                  <li class="tags-item">
-                    <a href="">Puma</a>
-                  </li>
-                  <li class="tags-item">
-                    <a href="">Spike</a>
+                  <li class="bukumapel-item">
+                    <a href="">Seni Budaya</a>
                   </li>
                 </ul>
               </div>
-              <div class="widgets widget-price-filter">
-                <h5 class="widget-title">Filter By Price</h5>
-                <ul class="product-tags sidebar-list list-unstyled">
-                  <li class="tags-item">
-                    <a href="">Less than $10</a>
-                  </li>
-                  <li class="tags-item">
-                    <a href="">$10- $20</a>
-                  </li>
-                  <li class="tags-item">
-                    <a href="">$20- $30</a>
-                  </li>
-                  <li class="tags-item">
-                    <a href="">$30- $40</a>
-                  </li>
-                  <li class="tags-item">
-                    <a href="">$40- $50</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </aside>
           
         </div>        
@@ -1180,69 +1148,4 @@
           </div>
           <div class="col-lg-2 col-md-4 col-sm-6">
             <figure class="zoom-effect">
-              <img src="{{asset ('asset/images/insta-image4.jpg')}}" alt="instagram" class="insta-image">
-              <i class="icon icon-instagram"></i>
-            </figure>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <figure class="zoom-effect">
-              <img src="{{asset ('asset/images/insta-image5.jpg')}}" alt="instagram" class="insta-image">
-              <i class="icon icon-instagram"></i>
-            </figure>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <figure class="zoom-effect">
-              <img src="{{asset ('asset/images/insta-image6.jpg')}}" alt="instagram" class="insta-image">
-              <i class="icon icon-instagram"></i>
-            </figure>
-          </div>
-        </div>          
-      </div>
-    </section>
-
-    <section id="shipping-information">
-      <hr>
-      <div class="container">
-        <div class="row d-flex flex-wrap align-items-center justify-content-between">
-          <div class="col-md-3 col-sm-6">
-            <div class="icon-box">
-              <i class="icon icon-truck"></i>
-              <h4 class="block-title">
-                <strong>Free shipping</strong> Over $200
-              </h4>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="icon-box">
-              <i class="icon icon-return"></i>
-              <h4 class="block-title">
-                <strong>Money back</strong> Return within 7 days
-              </h4>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="icon-box">
-              <i class="icon icon-tags1"></i>
-              <h4 class="block-title">
-                <strong>Buy 4 get 5th</strong> 50% off
-              </h4>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="icon-box">
-              <i class="icon icon-help_outline"></i>
-              <h4 class="block-title">
-                <strong>Any questions?</strong> experts are ready
-              </h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr>
-    </section>
-
-    </html>
-
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/script.js"></script>
+              <img src="{{asset ('asset/images/insta-image4.
