@@ -47,7 +47,7 @@
                   <div class="row d-flex flex-wrap">
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
-                        <img src="{{asset ('asset/images/selling-products1.jpg')}}" alt="Books" class="product-image">
+                        <img src="{{asset ('asset/images/ipa.jpg')}}" alt="Books" class="product-image">
                       </div>
                       <div class="cart-concern">
                         <div class="cart-button d-flex justify-content-between align-items-center">
@@ -72,7 +72,7 @@
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
-                        <img src="{{asset ('asset/images/selling-products2.jpg')}}" alt="Books" class="product-image">
+                        <img src="{{asset ('asset/images/ips.jpg')}}" alt="Books" class="product-image">
                       </div>
                       <div class="cart-concern">
                         <div class="cart-button d-flex justify-content-between align-items-center">
