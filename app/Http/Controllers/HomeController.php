@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\KategoriBuku;
+use App\Models\Buku;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -29,8 +30,10 @@ class HomeController extends Controller
 
     public function homekategori(){
         $kategoris = KategoriBuku::latest()->paginate(6);
-        return view('user.kategori.home-kategori', compact('kategoris'));
+        $bukus = Buku::all();
+        return view('user.kategori.home-kategori', compact('kategoris', 'bukus'));
     }
+    
 
 
 }

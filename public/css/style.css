@@ -1989,6 +1989,7 @@ blockquote cite {
     cursor: pointer;
     margin-bottom: 20px;
     width: 100%;
+    height: 400px;
 }
 .product-item .cart-concern {
     background: var(--light-color);

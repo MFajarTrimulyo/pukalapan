@@ -37,6 +37,8 @@
     <div class="shopify-grid padding-large">
         <div class="container">
             <div class="row">
+            <!-- Bar Kategori -->
+            
                 <section id="selling-products" class="col-md-9 product-store">
                     <div class="container">
                         <ul class="tabs list-unstyled">
@@ -65,9 +67,10 @@
                         <div class="tab-content">
                             <div id="all" data-tab-content class="active">
                                 <div class="row d-flex flex-wrap">
+                                    @foreach ($bukus as $buku)
                                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                                         <div class="image-holder">
-                                            <img src="{{ asset('asset/images/ips.jpg') }}" alt="Books"
+                                            <img src="{{ asset('/storage/bukus/' . $buku->foto) }}" alt="Books"
                                                 class="product-image">
                                         </div>
                                         <div class="cart-concern">
@@ -77,8 +80,7 @@
                                                         class="icon icon-arrow-io"></i>
                                                 </button>
                                                 <button type="button"
-                                                    class="view-btn tooltip
-                              d-flex">
+                                                    class="view-btn tooltipd-flex">
                                                     <i class="icon icon-screen-full"></i>
                                                     <span class="tooltip-text">Quick view</span>
                                                 </button>
@@ -89,310 +91,12 @@
                                         </div>
                                         <div class="product-detail">
                                             <h3 class="product-title">
-                                                <a href="single-product.html">Ipa</a>
+                                                <a href="single-product.html">{{ $buku->judul_buku }}</a>
                                             </h3>
                                             <div class="item-price text-primary">Ready</div>
                                         </div>
                                     </div>
-                                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
-                                        <div class="image-holder">
-                                            <img src="{{ asset('asset/images/ipa.jpg') }}" alt="Books"
-                                                class="product-image">
-                                        </div>
-                                        <div class="cart-concern">
-                                            <div class="cart-button d-flex justify-content-between align-items-center">
-                                                <button type="button"
-                                                    class="btn-wrap cart-link d-flex align-items-center">add to cart <i
-                                                        class="icon icon-arrow-io"></i>
-                                                </button>
-                                                <button type="button"
-                                                    class="view-btn tooltip
-                              d-flex">
-                                                    <i class="icon icon-screen-full"></i>
-                                                    <span class="tooltip-text">Quick view</span>
-                                                </button>
-                                                <button type="button" class="wishlist-btn">
-                                                    <i class="icon icon-heart"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="product-detail">
-                                            <h3 class="product-title">
-                                                <a href="single-product.html">Ips</a>
-                                            </h3>
-                                            <div class="item-price text-primary">Ready</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
-                                        <div class="image-holder">
-                                            <img src="{{ asset('asset/images/selling-products3.jpg') }}"
-                                                alt="Books" class="product-image">
-                                        </div>
-                                        <div class="cart-concern">
-                                            <div class="cart-button d-flex justify-content-between align-items-center">
-                                                <button type="button"
-                                                    class="btn-wrap cart-link d-flex align-items-center">add to cart <i
-                                                        class="icon icon-arrow-io"></i>
-                                                </button>
-                                                <button type="button" class="view-btn tooltip d-flex">
-                                                    <i class="icon icon-screen-full"></i>
-                                                    <span class="tooltip-text">Quick view</span>
-                                                </button>
-                                                <button type="button" class="wishlist-btn">
-                                                    <i class="icon icon-heart"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="product-detail">
-                                            <h3 class="product-title">
-                                                <a href="single-product.html">Pkn</a>
-                                            </h3>
-                                            <div class="item-price text-primary">Ready</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
-                                        <div class="image-holder">
-                                            <img src="{{ asset('asset/images/selling-products4.jpg') }}"
-                                                alt="Books" class="product-image">
-                                        </div>
-                                        <div class="cart-concern">
-                                            <div class="cart-button d-flex justify-content-between align-items-center">
-                                                <button type="button"
-                                                    class="btn-wrap cart-link d-flex align-items-center">add to cart <i
-                                                        class="icon icon-arrow-io"></i>
-                                                </button>
-                                                <button type="button" class="view-btn tooltip d-flex">
-                                                    <i class="icon icon-screen-full"></i>
-                                                    <span class="tooltip-text">Quick view</span>
-                                                </button>
-                                                <button type="button" class="wishlist-btn">
-                                                    <i class="icon icon-heart"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="product-detail">
-                                            <h3 class="product-title">
-                                                <a href="single-product.html">B Indonesia</a>
-                                            </h3>
-                                            <div class="item-price text-primary">Ready</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
-                                        <div class="image-holder">
-                                            <img src="{{ asset('asset/images/selling-products5.jpg') }}"
-                                                alt="Books" class="product-image">
-                                        </div>
-                                        <div class="cart-concern">
-                                            <div class="cart-button d-flex justify-content-between align-items-center">
-                                                <button type="button"
-                                                    class="btn-wrap cart-link d-flex align-items-center">add to cart <i
-                                                        class="icon icon-arrow-io"></i>
-                                                </button>
-                                                <button type="button" class="view-btn tooltip d-flex">
-                                                    <i class="icon icon-screen-full"></i>
-                                                    <span class="tooltip-text">Quick view</span>
-                                                </button>
-                                                <button type="button" class="wishlist-btn">
-                                                    <i class="icon icon-heart"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="product-detail">
-                                            <h3 class="product-title">
-                                                <a href="single-product.html">B Inggris</a>
-                                            </h3>
-                                            <div class="item-price text-primary">Ready</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
-                                        <div class="image-holder">
-                                            <img src="{{ asset('asset/images/selling-products6.jpg') }}"
-                                                alt="Books" class="product-image">
-                                        </div>
-                                        <div class="cart-concern">
-                                            <div class="cart-button d-flex justify-content-between align-items-center">
-                                                <button type="button"
-                                                    class="btn-wrap cart-link d-flex align-items-center">add to cart <i
-                                                        class="icon icon-arrow-io"></i>
-                                                </button>
-                                                <button type="button" class="view-btn tooltip d-flex">
-                                                    <i class="icon icon-screen-full"></i>
-                                                    <span class="tooltip-text">Quick view</span>
-                                                </button>
-                                                <button type="button" class="wishlist-btn">
-                                                    <i class="icon icon-heart"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="product-detail">
-                                            <h3 class="product-title">
-                                                <a href="single-product.html">Pai</a>
-                                            </h3>
-                                            <div class="item-price text-primary">Ready</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
-                                        <div class="image-holder">
-                                            <img src="{{ asset('asset/images/selling-products7.jpg') }}"
-                                                alt="Books" class="product-image">
-                                        </div>
-                                        <div class="cart-concern">
-                                            <div class="cart-button d-flex justify-content-between align-items-center">
-                                                <button type="button"
-                                                    class="btn-wrap cart-link d-flex align-items-center">add to cart <i
-                                                        class="icon icon-arrow-io"></i>
-                                                </button>
-                                                <button type="button" class="view-btn tooltip d-flex">
-                                                    <i class="icon icon-screen-full"></i>
-                                                    <span class="tooltip-text">Quick view</span>
-                                                </button>
-                                                <button type="button" class="wishlist-btn">
-                                                    <i class="icon icon-heart"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="product-detail">
-                                            <h3 class="product-title">
-                                                <a href="single-product.html">Seni Budaya</a>
-                                            </h3>
-                                            <div class="item-price text-primary">Ready</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
-                                        <div class="image-holder">
-                                            <img src="{{ asset('asset/images/selling-products8.jpg') }}"
-                                                alt="Books" class="product-image">
-                                        </div>
-                                        <div class="cart-concern">
-                                            <div class="cart-button d-flex justify-content-between align-items-center">
-                                                <button type="button"
-                                                    class="btn-wrap cart-link d-flex align-items-center">add to cart <i
-                                                        class="icon icon-arrow-io"></i>
-                                                </button>
-                                                <button type="button" class="view-btn tooltip d-flex">
-                                                    <i class="icon icon-screen-full"></i>
-                                                    <span class="tooltip-text">Quick view</span>
-                                                </button>
-                                                <button type="button" class="wishlist-btn">
-                                                    <i class="icon icon-heart"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="product-detail">
-                                            <h3 class="product-title">
-                                                <a href="single-product.html">Fisika</a>
-                                            </h3>
-                                            <div class="item-price text-primary">Ready</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
-                                        <div class="image-holder">
-                                            <img src="{{ asset('asset/images/selling-products18.jpg') }}"
-                                                alt="Books" class="product-image">
-                                        </div>
-                                        <div class="cart-concern">
-                                            <div class="cart-button d-flex justify-content-between align-items-center">
-                                                <button type="button"
-                                                    class="btn-wrap cart-link d-flex align-items-center">add to cart <i
-                                                        class="icon icon-arrow-io"></i>
-                                                </button>
-                                                <button type="button" class="view-btn tooltip d-flex">
-                                                    <i class="icon icon-screen-full"></i>
-                                                    <span class="tooltip-text">Quick view</span>
-                                                </button>
-                                                <button type="button" class="wishlist-btn">
-                                                    <i class="icon icon-heart"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="product-detail">
-                                            <h3 class="product-title">
-                                                <a href="single-product.html">Kimia</a>
-                                            </h3>
-                                            <div class="item-price text-primary">Ready</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
-                                        <div class="image-holder">
-                                            <img src="{{ asset('asset/images/selling-products14.jpg') }}"
-                                                alt="Books" class="product-image">
-                                        </div>
-                                        <div class="cart-concern">
-                                            <div class="cart-button d-flex justify-content-between align-items-center">
-                                                <button type="button"
-                                                    class="btn-wrap cart-link d-flex align-items-center">add to cart <i
-                                                        class="icon icon-arrow-io"></i>
-                                                </button>
-                                                <button type="button" class="view-btn tooltip d-flex">
-                                                    <i class="icon icon-screen-full"></i>
-                                                    <span class="tooltip-text">Quick view</span>
-                                                </button>
-                                                <button type="button" class="wishlist-btn">
-                                                    <i class="icon icon-heart"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="product-detail">
-                                            <h3 class="product-title">
-                                                <a href="single-product.html">Biologi</a>
-                                            </h3>
-                                            <div class="item-price text-primary">Ready</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
-                                        <div class="image-holder">
-                                            <img src="{{ asset('asset/images/selling-products15.jpg') }}"
-                                                alt="Books" class="product-image">
-                                        </div>
-                                        <div class="cart-concern">
-                                            <div class="cart-button d-flex justify-content-between align-items-center">
-                                                <button type="button"
-                                                    class="btn-wrap cart-link d-flex align-items-center">add to cart <i
-                                                        class="icon icon-arrow-io"></i>
-                                                </button>
-                                                <button type="button" class="view-btn tooltip d-flex">
-                                                    <i class="icon icon-screen-full"></i>
-                                                    <span class="tooltip-text">Quick view</span>
-                                                </button>
-                                                <button type="button" class="wishlist-btn">
-                                                    <i class="icon icon-heart"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="product-detail">
-                                            <h3 class="product-title">
-                                                <a href="single-product.html">Penjaskes</a>
-                                            </h3>
-                                            <div class="item-price text-primary">Ready</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
-                                        <div class="image-holder">
-                                            <img src="{{ asset('asset/images/selling-products15.jpg') }}"
-                                                alt="Books" class="product-image">
-                                        </div>
-                                        <div class="cart-concern">
-                                            <div class="cart-button d-flex justify-content-between align-items-center">
-                                                <button type="button"
-                                                    class="btn-wrap cart-link d-flex align-items-center">add to cart <i
-                                                        class="icon icon-arrow-io"></i>
-                                                </button>
-                                                <button type="button" class="view-btn tooltip d-flex">
-                                                    <i class="icon icon-screen-full"></i>
-                                                    <span class="tooltip-text">Quick view</span>
-                                                </button>
-                                                <button type="button" class="wishlist-btn">
-                                                    <i class="icon icon-heart"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="product-detail">
-                                            <h3 class="product-title">
-                                                <a href="single-product.html">Kejurusan</a>
-                                            </h3>
-                                            <div class="item-price text-primary">Ready</div>
-                                        </div>
-                                    </div>
+                                    @endforeach
                                 </div>
                             </div>
                             <div id="shoes" data-tab-content>
