@@ -167,7 +167,7 @@ optgroup,
 select,
 textarea {
   font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
+  font-size: x-small; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
 }
@@ -202,6 +202,7 @@ button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
+    font-size: small;
   -webkit-appearance: button;
 }
 

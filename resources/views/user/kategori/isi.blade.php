@@ -37,8 +37,8 @@
     <div class="shopify-grid padding-large">
         <div class="container">
             <div class="row">
-            <!-- Bar Kategori -->
-            
+                <!-- Bar Kategori -->
+
                 <section id="selling-products" class="col-md-9 product-store">
                     <div class="container">
                         <ul class="tabs list-unstyled">
@@ -68,34 +68,27 @@
                             <div id="all" data-tab-content class="active">
                                 <div class="row d-flex flex-wrap">
                                     @foreach ($bukus as $buku)
-                                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
-                                        <div class="image-holder">
-                                            <img src="{{ asset('/storage/bukus/' . $buku->foto) }}" alt="Books"
-                                                class="product-image">
-                                        </div>
-                                        <div class="cart-concern">
-                                            <div class="cart-button d-flex justify-content-between align-items-center">
-                                                <button type="button"
-                                                    class="btn-wrap cart-link d-flex align-items-center">add to cart <i
-                                                        class="icon icon-arrow-io"></i>
-                                                </button>
-                                                <button type="button"
-                                                    class="view-btn tooltipd-flex">
-                                                    <i class="icon icon-screen-full"></i>
-                                                    <span class="tooltip-text">Quick view</span>
-                                                </button>
-                                                <button type="button" class="wishlist-btn">
-                                                    <i class="icon icon-heart"></i>
-                                                </button>
+                                        <div class="product-item col-lg-4 col-md-4 col-sm-6">
+                                            <div class="image-holder">
+                                                <img src="{{ asset('/storage/bukus/' . $buku->foto) }}" alt="Books"
+                                                    class="product-image">
+                                            </div>
+                                            <div class="product-detail">
+                                                    <button type="button" class="wishlist-btn">
+                                                            <i class="icon icon-heart"></i>
+                                                            Like
+                                                    </button>
+
+                                                    <button type="button"
+                                                    class="btn-wrap cart-link d-flex align-items-center">add to cart
+                                                    <i class="icon icon-arrow-io"></i>
+                                                    </button>
+                                                <h3 class="product-title">
+                                                    <a href="single-product.html">{{ $buku->judul_buku }}</a>
+                                                </h3>
+                                                <div class="item-price text-primary">Ready</div>
                                             </div>
                                         </div>
-                                        <div class="product-detail">
-                                            <h3 class="product-title">
-                                                <a href="single-product.html">{{ $buku->judul_buku }}</a>
-                                            </h3>
-                                            <div class="item-price text-primary">Ready</div>
-                                        </div>
-                                    </div>
                                     @endforeach
                                 </div>
                             </div>
@@ -103,8 +96,8 @@
                                 <div class="row d-flex flex-wrap">
                                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                                         <div class="image-holder">
-                                            <img src="{{ asset('asset/images/selling-products13.jpg') }}"
-                                                alt="Books" class="product-image">
+                                            <img src="{{ asset('asset/images/selling-products13.jpg') }}" alt="Books"
+                                                class="product-image">
                                         </div>
                                         <div class="cart-concern">
                                             <div class="cart-button d-flex justify-content-between align-items-center">

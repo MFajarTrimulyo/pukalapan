@@ -35,7 +35,7 @@
                                 <i class="fas fa-ellipsis-v"></i>
                             </button>
                             <ul
-                                class="hidden bg-white text-gray-600 border border-gray-300 py-1 px-2 absolute top-8 right-0 z-10 space-y-1 menu">
+                                class="hidden bg-white text-gray-600 border border-gray-300 py-1 px-2 absolute top-4 right-14 z-10 space-y-1 menu">
                                 <li>
                                     <a href="{{ route('kategori.edit', $item->id) }}"
                                         class="flex items-center hover:text-blue-500">
