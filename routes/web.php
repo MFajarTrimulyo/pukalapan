@@ -12,9 +12,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/homepage', function () {
-    return view('user.homepage.index');
-});
+Route::get('/homepage', [App\Http\Controllers\HomepageController::class, 'kategori'])->name('kategori');
 
 Route::get('/kategori', [App\Http\Controllers\HomeController::class, 'homekategori'])->name('kategori');
 Route::get('/isi', function () {return view('user.homepage.isi');});
@@ -32,6 +30,10 @@ Route::get('/forget', function (){
     return view('forget');
 });
 
+Route::get('/modal', function (){
+    return view('user.modal-buku.modal');
+});
+
 Route::resource('/admin/buku/kategori', App\Http\Controllers\KategoriBukuController::class);
 Route::resource('/admin/user', App\Http\Controllers\UserController::class);
 Route::resource('/admin/buku', App\Http\Controllers\BukuController::class);
@@ -39,3 +41,4 @@ Route::resource('/admin/buku', App\Http\Controllers\BukuController::class);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+

@@ -106,17 +106,13 @@
 
                         <!-- Kategori -->
 
+                        
                         <li class="menu-item has-sub">
                         <a href="/kategori" class="item-anchor d-flex align-item-center" data-effect="Shop">Kategori<i class="icon icon-chevron-down"></i></a>
                         <ul class="submenu">
-                          <li><a href="/kategori" class="item-anchor"><span class="text-primary"Kategori</a></li>
-                          <li><a href="/kategori" class="item-anchor">All</a></li>
-                          <li><a href="/kategori" class="item-anchor">Umum</a></li>
-                          <li><a href="/kategori" class="item-anchor">Study</a></li>
-                          <li><a href="/kategori" class="item-anchor">Sastra</a></li>
-                          <li><a href="cart.html" class="item-anchor">Fabel</a></li>
-                          <li><a href="wishlist.html" class="item-anchor">Cerita</a></li>
-                          <li><a href="checkout.html" class="item-anchor">Teknologi</a></li>
+                        @foreach ($kategoris as $kategori)
+                          <li><a href="/kategori" class="item-anchor"><span class="text-primary">{{ $kategori->nama_kategori }}</a></li>
+                          @endforeach
                         </ul>
                       </li>
 
