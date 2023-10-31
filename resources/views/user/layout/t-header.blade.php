@@ -98,56 +98,78 @@
                   <div id="main-nav" class="stellarnav d-flex justify-content-end right">
                     <ul class="menu-list">
 
+                    <!-- Homepage -->
+
                       <li class="menu-item has-sub">
-                        <a href="/" class="item-anchor active d-flex align-item-center" data-effect="Home">Home<i class="icon icon-chevron-down"></i></a>
+                        <a href="/homepage" class="item-anchor active d-flex align-item-center" data-effect="Home">Home<i class="icon icon-chevron-down"></i></a>
                         <ul class="submenu">
-                          <li><a href="/" class="item-anchor active">Home</a></li>
+                          <li><a href="/homepage" class="item-anchor active">Home</a></li>
+                          <li><a href="/homepage" class="item-anchor active">Terbaru</a></li>
+                          <li><a href="/homepage" class="item-anchor active">Berita</a></li>
                         </ul>
-                      </li>
 
-                      <li><a href="/about" class="item-anchor" data-effect="About">About</a></li>
-
-                      <li class="menu-item has-sub">
+                        <!-- Kategori -->
+                      
+                        <li class="menu-item has-sub">
                         <a href="/kategori" class="item-anchor d-flex align-item-center" data-effect="Shop">Kategori<i class="icon icon-chevron-down"></i></a>
                         <ul class="submenu">
-                          <li><a href="/kategori" class="item-anchor">Kategori</a></li>
-                          <li><a href="/kategori" class="item-anchor">All<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="/kategori" class="item-anchor">Umum<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="/kategori" class="item-anchor">Study<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="/kategori" class="item-anchor">Sastra<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="cart.html" class="item-anchor">Fabel<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="wishlist.html" class="item-anchor">Cerita<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="checkout.html" class="item-anchor">Teknologi<span class="text-primary"> (PRO)</span></a></li>
+                          <li><a href="/kategori" class="item-anchor"><span class="text-primary"Kategori</a></li>
+                          <li><a href="/kategori" class="item-anchor">All</a></li>
+                          <li><a href="/kategori" class="item-anchor">Umum</a></li>
+                          <li><a href="/kategori" class="item-anchor">Study</a></li>
+                          <li><a href="/kategori" class="item-anchor">Sastra</a></li>
+                          <li><a href="cart.html" class="item-anchor">Fabel</a></li>
+                          <li><a href="wishlist.html" class="item-anchor">Cerita</a></li>
+                          <li><a href="checkout.html" class="item-anchor">Teknologi</a></li>
                         </ul>
                       </li>
 
-                      <li class="menu-item has-sub">
-                        <a href="#" class="item-anchor d-flex align-item-center" data-effect="Pages">Pages<i class="icon icon-chevron-down"></i></a>
+                      <!-- About -->
+
+                    <li class="menu-item has-sub">
+                        <a href="/about" class="item-anchor d-flex align-item-center" data-effect="Shop">About<i class="icon icon-chevron-down"></i></a>
                         <ul class="submenu">
-                          <li><a href="coming-soon.html" class="item-anchor">Coming soon<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="login.html" class="item-anchor">Login<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="faqs.html" class="item-anchor">FAQs<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="styles.html" class="item-anchor">Styles</a></li>
-                          <li><a href="thank-you.html" class="item-anchor">Thankyou</a></li>
-                          <li><a href="error.html" class="item-anchor">Error page<span class="text-primary"> (PRO)</span></a></li>
+                          <li><a href="/about" class="item-anchor"><span class="text-primary">About</span></a></li>
+                          <li><a href="/contact" class="item-anchor">Contact</a></li>
+                          <li><a href="/faq" class="item-anchor">FAQs</a></li>
+                          <li><a href="/card" class="item-anchor">Card</a></li>
+                          <li><a href="/" class="item-anchor"><span class="text-primary">Log Out</span></a></li>
                         </ul>
                       </li>
+                     
+                      <!-- Chat -->
 
                       <li class="menu-item has-sub">
                         <a href="/chat" class="item-anchor d-flex align-item-center" data-effect="Blog">Chat<i class="icon icon-chevron-down"></i></a>
                         <ul class="submenu">
                           <li><a href="/chat" class="item-anchor">Chat</a></li>
-                          <li><a href="blog-sidebar.html" class="item-anchor">Blog with sidebar<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="blog-masonry.html" class="item-anchor">Blog masonry<span class="text-primary"> (PRO)</span></a></li>
+                          <li><a href="blog-sidebar.html" class="item-anchor">Blog with sidebar</a></li>
+                          <li><a href="blog-masonry.html" class="item-anchor">Blog masonry</a></li>
                           <li><a href="single-post.html" class="item-anchor">Single post</a></li>
                         </ul>
                       </li>
-
                       <li><a href="contact.html" class="item-anchor" data-effect="Contact">Histori</a></li>
+                    
 
+                  <!-- Logout -->
+                  
+                    <li class="menu-item has-sub">
+                    <a id="navbarDropdown" class="item-anchor" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                      {{ Auth::user()->name }}</a>
+                    
+                    <ul class="submenu">
+                    <li><form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none"><a class="item-anchor" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
+                            
+                                        @csrf
+                                    </form>
+                            <li>
+                      </li>
+                    </ul>
+                    </li>
                     </ul>
                   </div>
-
                 </div>
               </div>
             </div>
