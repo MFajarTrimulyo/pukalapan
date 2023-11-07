@@ -28,9 +28,11 @@
     
 
 
-@include('user.layout.t-header') <!-- Menambahkan header -->
+<!-- @include('user.layout.t-header')  -->
 
-@include('user.about.about')
+<!-- Menambahkan header -->
+
+@include('user.conten.about.about')
 
 @include('user.layout.footer')
 </body>

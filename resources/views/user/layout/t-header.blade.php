@@ -109,12 +109,14 @@
                         
                         <li class="menu-item has-sub">
                         <a href="/kategori" class="item-anchor d-flex align-item-center" data-effect="Shop">Kategori<i class="icon icon-chevron-down"></i></a>
+                        
                         <ul class="submenu">
+                        
                         @foreach ($kategoris as $kategori)
                           <li><a href="/kategori" class="item-anchor"><span class="text-primary">{{ $kategori->nama_kategori }}</a></li>
                           @endforeach
                         </ul>
-                      </li>
+                      </li> 
 
                       <!-- About -->
 
