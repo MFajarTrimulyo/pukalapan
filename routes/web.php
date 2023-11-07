@@ -16,10 +16,12 @@ Route::get('/homepage', [App\Http\Controllers\HomepageController::class, 'katego
 
 Route::get('/kategori', [App\Http\Controllers\HomeController::class, 'homekategori'])->name('kategori');
 Route::get('/isi', function () {return view('user.homepage.isi');});
+Route::get('/contact', [App\Http\Controllers\HomepageController::class, 'contact'])->name('contact');
 
 // Route::get('/search', 'SearchController@search')->name('search');
 Route::get('/about', function () {return view('user.conten.about.index');});
 Route::get('/chat', function () {return view('user.chat.index');});
+
 
 
 Route::get('/', function (){

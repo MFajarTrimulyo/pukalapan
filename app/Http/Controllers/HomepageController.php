@@ -19,5 +19,11 @@ class HomepageController extends Controller
         $bukus = Buku::all();
         return view('user.homepage.index', compact('kategoris', 'bukus'));
     }
+
+    public function contact(){
+        $kategoris = KategoriBuku::latest()->paginate(6);
+        $bukus = Buku::all();
+        return view('user.contact.index',  compact('kategoris', 'bukus'));   
+    }
 }
 
